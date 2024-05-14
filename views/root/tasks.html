@@ -1,0 +1,64 @@
+<!-- views/tasks.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Tasks</title>
+    <link rel="stylesheet" href="/s/styles.css">
+</head>
+<body>
+    <div id="navbarContainer"></div>
+    <div class="container">
+        <h2 style="text-align: center; color: green;">View Tasks</h2>
+        <div class="button-container">
+            <form>
+                <button id="all-tasks-btn" type="submit">All Tasks</button>
+            </form>
+
+            <form>
+                <button id="due-today-btn" type="submit">Due Today</button>
+            </form>
+            <button id="due-at-btn">Due At</button>
+            
+        </div>
+
+        <div id="alltasks" class="btn hidden">
+            <h2 style="text-align: center;">All Tasks</h2>
+            <div id="alltasksPlaceholder">
+                <!-- alltasksPlaceholder -->
+            </div>
+        </div>
+
+        <div id="duetoday" class="btn hidden">
+            <h2 style="text-align: center;">Due Today</h2>
+            <div id="duetodayPlaceholder">
+                <!-- duetodayPlaceholder -->
+            </div>
+        </div>
+
+        <div id="dueAt" class="btn hidden">
+            <h2 style="text-align: center;">Due At</h2>
+            <div class="dueForm">
+                <form>
+                    <label for="dueDate">Enter the due date: </label>
+                    <input type="date" id="dueDate" name="dueDate">
+                    <button id="getTasks" type="submit">Get Tasks</button>
+                </form>
+            </div>
+            <br>
+            <div id="dueAtPlaceholder" style="display: flex; justify-content: center;">
+                <!-- dueAfterPlaceholder -->
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="/s/script.js"></script>
+    <script>
+        navbar1();
+        controlViewTasks();
+    </script>
+</body>
+</html>
