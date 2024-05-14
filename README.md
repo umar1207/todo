@@ -1,6 +1,5 @@
 ## About
-A software to manage the records of students enrolled in a university
-Perform operations like searching records by filtering, inserting new records, deleting existing records, updating existing records
+Todo App
 
 ## Usage
 
